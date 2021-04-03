@@ -1,0 +1,243 @@
+body,
+td,
+th,
+tr,
+p,
+a,
+span,h1,h2,h3,h4,h5 {
+  font-family: "Lato", Verdana, Helvetica, sans-serif;
+}
+
+body,
+td,
+th,
+tr,
+p,
+a {
+  font-size: 15px;
+}
+body {
+  width: 100%;
+  max-width: 950px;
+  border: 0px;
+  border-spacing: 0px;
+  border-collapse: separate;
+  margin-right: auto;
+  margin-left: auto;
+  margin-top: 10px;
+}
+img {
+  border-radius: 10px;
+  width: 70%;
+}
+
+a {
+  color: #1772d0;
+  text-decoration: none;
+}
+a:focus,
+a:hover {
+  color: #f09228;
+  text-decoration: none;
+}
+
+strong {
+  font-size: 14px;
+  text-decoration: underline;
+  font-style: italic;
+}
+
+.heading {
+  font-size: 25px;
+  border: 0px;
+  border-spacing: 0px;
+  border-collapse: separate;
+  margin: 10px;
+  margin-bottom: 0px;
+  padding: 15px;
+  vertical-align: middle;
+  background-color: #f3f3f3;
+}
+
+.headingsummary {
+  padding: 10px;
+  margin: 10px;
+  margin-top: 0px;
+}
+
+.papertitle,
+.experiencetitle,
+.servicetitle {
+  font-size: 17px;
+  font-weight: 700;
+  margin: 0px;
+  margin-bottom: 9px;
+}
+
+.servicetitle {
+  margin: 5px;
+  margin-left: 0px;
+}
+
+.name {
+  font-size: 32px;
+  text-align: center;
+  margin: 13px;
+}
+
+itempreview,
+.one {
+  width: 160px;
+  height: 160px;
+  position: relative;
+}
+
+.two {
+  width: 160px;
+  height: 160px;
+  position: absolute;
+  transition: opacity 0.2s ease-in-out;
+  -moz-transition: opacity 0.2s ease-in-out;
+  -webkit-transition: opacity 0.2s ease-in-out;
+  opacity: 0;
+}
+
+.publication_preview {
+  opacity: 0;
+}
+
+.fade {
+  transition: opacity 0.2s ease-in-out;
+  -moz-transition: opacity 0.2s ease-in-out;
+  -webkit-transition: opacity 0.2s ease-in-out;
+}
+
+span.highlight {
+  background-color: #ffffd0;
+}
+
+/*
+    Section CSS
+*/
+.table_section {
+  border: 0px;
+  border-spacing: 0px 10px;
+  border-collapse: separate;
+  margin: 12px;
+  margin-left: 1px;
+}
+
+.table_section__left {
+  padding: 0px;
+  width: 20%;
+  vertical-align: middle;
+  text-align: center;
+}
+
+.table_section__right {
+  padding: 20px;
+  width: 80%;
+  vertical-align: middle;
+}
+
+/*
+    Publications Section CSS
+*/
+/* .publications_section__right {
+}
+.publications_section__left {
+} */
+
+/*
+    CSS Services section
+*/
+.table_services__left {
+  padding: 0px;
+  width: 160px;
+  vertical-align: middle;
+}
+
+/*
+    CSS for fancy highlights
+*/
+.border_gradient {
+  box-shadow: 0 15px 40px rgba(0, 0, 0, 0.1);
+}
+
+/*
+    CSS for fancy hover
+*/
+@keyframes shake {
+  25% {
+    transform: rotate(calc(var(--angle) * -1));
+  }
+
+  50% {
+    transform: rotate(var(--angle));
+  }
+
+  100% {
+    transform: rotate(0deg);
+  }
+}
+
+.display {
+  display: grid;
+  grid-template-columns: 50% 50%;
+  grid-gap: 0.1em;
+}
+
+.HOVER {
+  --width: 100%;
+  --time: 0.7s;
+  position: relative;
+  border: 10px;
+  color: black;
+  background: #fff;
+  overflow: hidden;
+  border-radius: 5px;
+}
+
+.HOVER text {
+  position: relative;
+  z-index: 5;
+  transition: color var(--time);
+}
+
+.HOVER:hover text {
+  color: #fff;
+}
+.HOVER span {
+  border-radius: 100%;
+  position: absolute;
+  display: block;
+  content: "";
+  z-index: 0;
+  width: 0;
+  height: 0;
+
+  background: #000;
+  transform: translate(-50%, -50%);
+  transition: width var(--time), padding-top var(--time);
+}
+
+.HOVER:hover span {
+  width: calc(var(--width) * 2.25);
+  padding-top: calc(var(--width) * 2.25);
+}
+
+.HOVER.FLASH:hover text {
+  color: black;
+}
+.HOVER.FLASH span {
+  background: #ff3b3b;
+}
+
+.animated {
+  --angle: 5deg;
+  animation: shake 0.3s;
+}
+
+.CURRENT {
+  background-color: #ffffd0;
+}

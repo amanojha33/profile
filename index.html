@@ -1,184 +1,684 @@
 <!DOCTYPE HTML>
+<html lang="en">
+<head>
+  <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+
+  <!-- Global site tag (gtag.js) - Google Analytics -->
+  <script async src="https://www.googletagmanager.com/gtag/js?id=UA-159045548-1"></script>
+  <script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag() { dataLayer.push(arguments); }
+    gtag('js', new Date());
+    gtag('config', 'UA-159045548-1');
+  </script>
+  <script type="application/ld+json">
+    {
+      "@context": "http://schema.org",
+      "@type": "Person",
+      "name": "Aman Ojha",
+      "givenName": "Aman",
+      "familyName": "Ojha",
+      "url": "https://amanojha33.github.io/profile/",
+      "jobTitle": "Software Engineer Intern",
+      "alumniOf": "IIIT Lucknow",
+      "nationality": "Indian",
+      "gender": "male",
+      "image": "https://amanojha33.github.io/images/aman.jpg",
+      "sameAs": [
+          "https://www.linkedin.com/in/aman-ojha-1b7580bb/",
+          "https://github.com/amanojha33"
+        ]
+    }
+  </script>
+  <!-- End Google Analytics -->
+
+  <meta name="google-site-verification" content="Ie26PRm_0yXoXqxA4hcnw7B_n4tQR2E6EKNC2nILVIw" />
+
+  <!-- Google Tag Manager -->
+  <script>(function (w, d, s, l, i) {
+      w[l] = w[l] || []; w[l].push({
+        'gtm.start':
+          new Date().getTime(), event: 'gtm.js'
+      }); var f = d.getElementsByTagName(s)[0],
+        j = d.createElement(s), dl = l != 'dataLayer' ? '&l=' + l : ''; j.async = true; j.src =
+          'https://www.googletagmanager.com/gtm.js?id=' + i + dl; f.parentNode.insertBefore(j, f);
+    })(window, document, 'script', 'dataLayer', 'GTM-P3N595V');</script>
+  <!-- End Google Tag Manager -->
+
+
+  <title>Aman Ojha</title>
+  <meta name="author" content="Aman Ojha">
+
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <base target="_blank">
+  <script src="https://kit.fontawesome.com/02fef37810.js" crossorigin="anonymous"></script> <!-- Font Awesome -->
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script> <!-- jQuery       -->
+
+  <link rel="stylesheet" type="text/css" href="static/stylesheet_fonts.css">
+  <link rel="stylesheet" type="text/css" href="static/stylesheet_main.css">
+  <link rel="stylesheet" type="text/css" href="static/ripple.css">
+  <link rel="stylesheet" type="text/css" href="static/academicons.min.css">
+  
+  <link rel="icon" type="image/png" href="images/pb-white.png">
+  <script type="text/javascript">
+
+    // Scroll to Top
+    $('html,body').scrollTop(0);
+
+    function animateBox(ele, stage) {
+      if (stage == "start") {
+        $(ele).addClass("border_gradient")
+      } else if (stage == "stop") {
+        $(ele).removeClass("border_gradient")
+      }
+    }
+
+    // function animate_preview(ele, animation_stage) {
+    //   var elem = $(ele).find(".two");
+    //   if (elem.length <= 0) return;    // Nothing to animate here
+    //
+    //   if (animation_stage == "start") {
+    //     elem.animate({opacity: 1}, 0, function(){});
+    //     animateBox(ele, 'start');
+    //   } else if (animation_stage == "stop") {
+    //     elem.animate({opacity: 0}, 0, function(){});
+    //     animateBox(ele, 'stop');
+    //   }
+    // }
+
+    var onImageLoad = function () {
+      // Move image to top if small screen
+      if (screen.width < 760) {
+        var newParent = document.getElementById('col-image-mobile');
+        var oldParent = document.getElementById('col-image');
+        while (oldParent.childNodes.length > 0) {
+            newParent.appendChild(oldParent.childNodes[0]);
+        }
+        $(oldParent).remove();
+        $(newParent).show();
+        $(newParent).css("max-width", "300px");
+      }
+
+      var ele = document.getElementById("image-circle");
+      ele2 = $(".ripple-image")[0];
+      $(ele2).css("position", "absolute");
+      $(ele2).css("height", parseFloat($(ele).css("height")) * 0.98 + "px");
+      $(ele2).css("width", parseFloat($(ele).css("width")) * 0.98 + "px");
+      $(ele2).css("top", $(window).scrollTop() + parseFloat(ele.getBoundingClientRect().top) + parseFloat($(ele).css("height").slice(0, -2)) / 2 - parseFloat($(ele2).css("height").slice(0, -2)) / 2);
+      $(ele2).css("left", parseFloat(ele.getBoundingClientRect().left) + parseFloat($(ele).css("width").slice(0, -2)) / 2 - parseFloat($(ele2).css("width").slice(0, -2)) / 2);
+      $(ele2).css("z-index", -1);
+      $(ele2).css("display", "flex");
+    };
+  </script>
+</head>
+
+<body>
+  <!-- Google Tag Manager (noscript) -->
+  <noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-P3N595V" height="0" width="0"
+      style="display:none;visibility:hidden"></iframe></noscript>
+  <!-- End Google Tag Manager (noscript) -->
+
+  <table>
+    <tbody>
+      <tr>
+        <td id='col-text' style="padding: 1.5em; width:65%; max-width:35%;">
+          <h4 class="name">Aman Ojha</h4>
+          <p style="text-align:center">
+            <i class="far fa-envelope"></i> amanojha33 [at] gmail [dot] com |
+            <i class="fas fa-mobile-alt"></i> +91-969-515-8100
+          </p>
+          <div id="col-image-mobile" style="padding:1.5em; width:70%; text-align: center; margin: auto; display: none;">
+          </div>
+          <p style="text-align:center">
+            <a href="data/Aman_Ojha.pdf"><i class="fas fa-file-pdf"></i> Resume</a> |
+            <!-- <a href="data/PinkeshBadjatiya-bio.txt">Biography</a> | 
+            <a href="https://scholar.google.co.in/citations?user=9ICSXBsAAAAJ&hl=en">
+              <i class="ai ai-google-scholar" style="font-size: 20px; top: 2px; position: relative;"></i>
+              Google Scholar
+            </a> |
+            <a href="https://dblp.org/pid/198/5418">
+              <i class="ai ai-dblp" style="font-size: 20px; top: 2px; position: relative;"></i>
+              dblp
+            </a> |-->
+            <a href="https://www.linkedin.com/in/aman-ojha-1b7580bb/"><i class="fab fa-linkedin"></i> LinkedIn</a> |
+            <a href="https://www.github.com/amanojha33/"><i class="fab fa-github"></i> Github</a>
+          </p>
+          <p>
+            I am currently working with the <em>VSPhere (VCE) Lab</em> at <a
+              href="https://intel.com"><em>Intel</em></a> as a <em>Software Engineer Intern</em>, 
+              where I mainly focus on Linux System programming and Drivers Development.
+          </p>
+          <p>
+            I am interested in Linux-Unix programming, operating systems, machine learning, and iOS App development. Much of my research is in operating systems with distributed Systems and machine learning.
+            I am also interested in bringing these recent developments in AI to production systems.
+          </p>
+          <p>
+            I am pursuing my <em>M.Tech.</em> with a focus in the domain of clustering from <a href="https://www.iiitl.ac.in/">IIIT Lucknow</a> under the guidance of <a
+              href="https://iiitl.ac.in/index.php/personnel/dr-vishal-krishna-singh/">Dr. Vishal Krishna Singh</a> (TPO, IIIT Lucknow).<!-- and
+            <a href="https://www.microsoft.com/en-us/research/people/gmanish/">Prof. Manish Gupta</a> (Microsoft,
+            India). My thesis was encompassing the realm of Hate Speech Detection and Bias Mitigation in neural networks. Insights from my research work
+            subsequently resulted in the formation of <a href="https://blogs.iiit.ac.in/project-angel/">Project ANGEL</a>
+            which later garnered the <a href="https://india.googleblog.com/2020/09/announcing-google-india-aiml-research.html">Google AI/ML Research Award 2020</a>.         
+            Other projects I worked on during my studies include Trust Inference in Social Network, Document Segmentation, Text Summarization and Project Sexism.
+-->       </p>
+          <p>
+            I also completed my B.Tech with Honours in Information Technology from SRMCEM Lucknow.
+          </p>
+          <p>
+            I spend most of my time reading books. I also spend my spare time pursuing my childhood passion; following
+            <em>Astronomy</em>, <em>General Relativity</em>, and <em>Quantum Mechanics</em>. Occasionally, I spend time cooking, music, gardening and travelling.
+          </p>
+        </td>
+        <td id='col-image' style="padding:1.5em; width:45%; max-width:35%">
+          <a href="images/aman.jpg">
+            <img onLoad="onImageLoad()" style="width:100%;max-width:100%" id="image-circle" alt="profile photo"
+              src="images/aman.jpg" class="hoverZoomLink">
+            <div class="ripple-image"></div>
+          </a>
+        </td>
+      </tr>
+    </tbody>
+  </table>
+
+  <br/>
+  <br/>
+
+  <!-----------------   Experience ---------------->
+  <h3 class="heading">Work Experience</h3>
+  <table class="table_section">
+    <tbody>
+      <tr>
+        <td class="table_section__left">
+          <itempreview>
+            <!-- <div class="two">
+                  <img src='images/adobe_after.jpg'>
+                </div> -->
+            <img src='images/intel.png'>
+          </itempreview>
+        </td>
+        <td class="table_section__right HOVER CURRENT">
+          <span></span>
+          <text>
+            <h5 class="experiencetitle">Software Engineer Intern</h5>
+            <em>August 2020 - Current</em>
+            <br>
+            <resourcelinks>
+              <a href="http://www.intel.com/"><i class="fas fa-link"></i> Intel</a>
+            </resourcelinks>
+            <p>
+              I primarily work with Drivers and accelerators for Xeon servers products with VMWare Vsphere. 
+            </p>
+          </text>
+        </td>
+      </tr>
+
+      <tr>
+        <td class="table_section__left">
+          <itempreview>
+            <img src='images/tcs.jpeg'>
+          </itempreview>
+        </td>
+        <td class="table_section__right HOVER">
+          <span></span>
+          <text>
+            <h5 class="experiencetitle">System Engineer</h5>
+            <em>Sept 2016 - March 2018 (18 months)</em>
+            <br>
+            <resourcelinks>
+              <a href="http://www.tcs.com/"><i class="fas fa-link"></i> TCS Digital Labs</a>
+            </resourcelinks>
+            <p>
+              Developed and designed iOS apps from scratch for various TATA Group clients. Worked on developing features and modules for enterprise apps for iPads.
+            </p>
+          </text>
+        </td>
+      </tr>
 <!--
-	Stellar by HTML5 UP
-	html5up.net | @ajlkn
-	Free for personal and commercial use under the CCA 3.0 license (html5up.net/license)
+      <tr>
+        <td class="table_section__left">
+          <itempreview>
+            <img src='images/goldmansachs.png'>
+          </itempreview>
+        </td>
+        <td class="table_section__right HOVER">
+          <span></span>
+          <text>
+            <h5 class="experiencetitle">Software Engineer Intern</h5>
+            <em>May 2018 - July 2018 (3 months)</em>
+            <br>
+            <resourcelinks>
+              <a href="http://www.goldmansachs.com/"><i class="fas fa-link"></i> Goldman Sachs</a>
+            </resourcelinks>
+            <p>
+              Designed an algorithmic solution using constraint optimization in java and scala. Used TDD with OOP
+              concepts and Design patterns.
+              Performed error analysis and deployed to production.
+            </p>
+          </text>
+        </td>
+      </tr>
+
+      <tr>
+        <td class="table_section__left">
+          <itempreview>
+            <img src='images/thub.jpg'>
+          </itempreview>
+        </td>
+        <td class="table_section__right HOVER">
+          <span></span>
+          <text>
+            <h5 class="experiencetitle">Data Analytics/Site Reliability Engineer Intern</h5>
+            <em>Sep 2017 - Mar 2018 (7 months)</em>
+            <br>
+            <resourcelinks>
+              <a href="https://t-hub.co/"><i class="fas fa-link"></i> T-Hub Homepage</a>
+            </resourcelinks>
+            <p>
+              Developed analytics from the reports produced by ~280 co-working startups incubated at T-Hub.
+              Analyzed the user traffic flows to improve the site experience and generate weekly statistics for
+              internal-analysis using Google Analytics and Python
+            </p>
+          </text>
+        </td>
+      </tr>
+
+      <tr>
+        <td class="table_section__left">
+          <itempreview>
+            <img src='images/metabrainz.jpg'>
+          </itempreview>
+        </td>
+        <td class="table_section__right HOVER">
+          <span></span>
+          <text>
+            <h5 class="experiencetitle">Google Code-In Mentor</h5>
+            <em>Nov 2016 - Jan 2017 (3 months)</em>
+            <br>
+            <resourcelinks>
+              <a href="https://codein.withgoogle.com/"><i class="fas fa-link"></i> Google Code-In</a> /
+              <a href="https://metabrainz.org/"><i class="fas fa-link"></i> MetaBrainz Homepage</a>
+            </resourcelinks>
+            <p>
+              Mentored students working on the ListenBrainz project. Tasks involved creating tasks of varying difficulty
+              levels and evaluating their submissions.
+            </p>
+          </text>
+        </td>
+      </tr>
+
+      <tr>
+        <td class="table_section__left">
+          <itempreview>
+            <img src='images/felicity.jpg'>
+          </itempreview>
+        </td>
+        <td class="table_section__right HOVER">
+          <span></span>
+          <text>
+            <h5 class="experiencetitle">System Administrator and Organizer</h5>
+            <em>Jul 2016 - Jun 2017 (11 months)</em>
+            <br>
+            <resourcelinks>
+              <a href="https://felicity.iiit.ac.in"><i class="fas fa-link"></i> Felicity Website</a>
+            </resourcelinks>
+            <p>
+              Felicity Threads is the annual technical fest of IIIT Hyderabad. I was part of the team responsible for
+              maintaing the contest portals and the website for the fest. I was also a problem setter for the event
+              <em>Break-In CTF</em> and
+            </p>
+          </text>
+        </td>
+      </tr>
+      <tr>
+        <td class="table_section__left">
+          <itempreview>
+            <img src='images/metabrainz.jpg'>
+          </itempreview>
+        </td>
+        <td class="table_section__right HOVER">
+          <span></span>
+          <text>
+            <h5 class="experiencetitle">Google Summer Of Code (GSoC) Intern</h5>
+            <em>April 2016 - August 2016 (4 months)</em>
+            <br>
+            <resourcelinks>
+              <a href="https://summerofcode.withgoogle.com/"><i class="fas fa-link"></i> Google Summer of Code</a> /
+              <a href="https://blog.musicbrainz.org/2016/08/23/gsoc-16-listenbrainz-fun/"><i class="fas fa-link"></i>
+                Blog@MetaBrainz</a>
+            </resourcelinks>
+            <p>
+              Created a proxy submission Flask API compatible with Last.fm scrobblers.
+              Added scrobbling support for desktop clients with support for tracking currently playing song in Redis.
+            </p>
+          </text>
+        </td>
+      </tr>-->
+    </tbody>
+  </table>
+
+  <br/>
+  <br/>
+
+  <!-----------------   Publications 
+  <h3 class="heading">Research</h3>
+  <p class="headingsummary">
+    I'm interested in computer vision, machine learning, optimization, and image processing.---------------->
+    <!--Much of my research is about solving challenging problems that has significant impact. 
+    Representative papers are <span class="highlight">highlighted</span>.
+  </p>
+  <table class="table_section">
+    <tbody>
+      <tr>
+        <td class="table_section__left publications_section__left">
+          <itempreview>
+            <img src='images/placeholder.png'>
+          </itempreview>
+        </td>
+        <td class="table_section__right publications_section__right HOVER">
+          <span></span>
+          <text>
+            <h5 class="papertitle">
+              Inducing Cooperative behaviour in Sequential-Social dilemmas through Multi-Agent Reinforcement Learning using Status-Quo Loss
+            </h5>
+            <strong>Aman Ojha</strong>,
+            Mausoom Sarkar,
+            Abhishek Sinha,
+            Siddharth Singh,
+            Nikaash Puri,
+            Jayakumar Subramanian,
+            Balaji Krishnamurthy
+            <br>
+            <em>Under Review</em>
+            <br>
+            <em>Accepted as Extended Abstract in AAMAS 2020</em>
+            <br>
+            <resourcelinks>
+              <a href="https://arxiv.org/abs/2001.05458"><i class="fas fa-link"></i> paper</a>
+            </resourcelinks>
+          </text>
+        </td>
+      </tr>
+
+      <tr>
+        <td class="table_section__left publications_section__left">
+          <itempreview>
+            <img src='images/placeholder.png'>
+          </itempreview>
+        </td>
+        <td class="table_section__right publications_section__right HOVER">
+          <span></span>
+          <text>
+            <h5 class="papertitle">
+              TRACE: Transform Aggregate and Compose Visiolinguistic Representations for Image Search with Text Feedback
+            </h5>
+            Surgan Jandial*,
+            Ayush Chopra*,
+            <strong>Aman Ojha*</strong>,
+            Pranit Chawla,
+            Mausoom Sarkar,
+            Balaji Krishnamurthy
+            <br>
+            <em>* denotes equal contribution</em>
+            <br>
+            <em>Under Review</em>
+            <br>
+            <resourcelinks>
+              <a href="https://arxiv.org/abs/2009.01485"><i class="fas fa-link"></i> paper</a>
+            </resourcelinks>
+          </text>
+        </td>
+      </tr>
+
+
+      <tr>
+        <td class="table_section__left publications_section__left">
+          <itempreview>
+            <img src='images/placeholder.png'>
+          </itempreview>
+        </td>
+        <td class="table_section__right publications_section__right HOVER">
+          <span></span>
+          <text>
+            <h5 class="papertitle">
+              MixBoost: Synthetic Oversampling with Boosted Mixup for Handling Extreme Imbalance
+            </h5>
+            Anubha Kabra,
+            Ayush Chopra,
+            Nikaash Puri,
+            <strong>Aman Ojha</strong>,
+            Sukriti Verma,
+            Piyush Gupta,
+            Balaji Krishnamurthy
+            <br>
+            <em>IEEE International Conference on Data Mining (ICDM)</em>, 2020
+            <br>
+            <resourcelinks>
+              <a href="https://arxiv.org/abs/2009.01571"><i class="fas fa-link"></i> paper</a>
+            </resourcelinks>
+          </text>
+        </td>
+      </tr>
+
+      <tr>
+        <td class="table_section__left publications_section__left">
+          <itempreview>
+            <img src='images/placeholder.png'>
+          </itempreview>
+        </td>
+        <td class="table_section__right publications_section__right HOVER">
+          <span></span>
+          <text>
+            <h5 class="papertitle">
+              Multi-label Categorization of Accounts of Sexism using a Neural Framework
+            </h5>
+            Pulkit Parikh,
+            Harika Abburi,
+            <strong>Aman Ojha</strong>,
+            Radhika Krishnan,
+            <a href="https://research.adobe.com/person/niyati-chhaya/">Niyati Chhaya</a>,
+            <a href="https://www.microsoft.com/en-us/research/people/gmanish/">Manish Gupta</a>,
+            <a href="https://irel.iiit.ac.in/vasu/">Vasudeva Varma</a>
+            <br>
+            <em>Empirical Methods in Natural Language Processing (EMNLP)</em>, 2019
+            <br>
+            <resourcelinks>
+              <a href="https://arxiv.org/pdf/1910.04602"><i class="fas fa-link"></i> paper</a>
+            </resourcelinks>
+          </text>
+        </td>
+      </tr>
+
+      <tr>
+        <td class="table_section__left publications_section__left">
+          <itempreview>
+            <img src='images/placeholder.png'>
+          </itempreview>
+        </td>
+        <td class="table_section__right publications_section__right HOVER">
+          <span></span>
+          <text>
+            <h5 class="papertitle">Stereotypical bias removal for hate speech detection task using knowledge-based generalizations
+            </h5>
+            <strong>Aman Ojha</strong>,
+            <a href="https://www.microsoft.com/en-us/research/people/gmanish/">Manish Gupta</a>,
+            <a href="https://irel.iiit.ac.in/vasu/">Vasudeva Varma</a>
+            <br>
+            <em>The Web Conference (TheWebConf)</em>, 2019
+            <br>
+            <resourcelinks>
+              <a href="https://arxiv.org/pdf/2001.05495"><i class="fas fa-link"></i> paper</a>
+            </resourcelinks>
+          </text>
+        </td>
+      </tr>
+
+      <tr>
+        <td class="table_section__left publications_section__left">
+          <itempreview>
+            <img src='images/placeholder.png'>
+          </itempreview>
+        </td>
+        <td class="table_section__right publications_section__right HOVER">
+          <span></span>
+          <text>
+            <h5 class="papertitle">Attention-based neural text segmentation</h5>
+            <strong>Aman Ojha</strong>,
+            Litton J Kurisinkel,
+            <a href="https://www.microsoft.com/en-us/research/people/gmanish/">Manish Gupta</a>,
+            <a href="https://irel.iiit.ac.in/vasu/">Vasudeva Varma</a>
+            <br>
+            <em>ECIR</em>, 2018
+            <br>
+            <resourcelinks>
+              <a href="https://arxiv.org/pdf/1808.09935"><i class="fas fa-link"></i> paper</a> /
+              <a href="https://github.com/pinkeshbadjatiya/neuralTextSegmentation"><i class="fas fa-link"></i> code</a>
+            </resourcelinks>
+          </text>
+        </td>
+      </tr>
+
+      <tr>
+        <td class="table_section__left publications_section__left">
+          <itempreview>
+            <img src='images/placeholder.png'>
+          </itempreview>
+        </td>
+        <td class="table_section__right publications_section__right HOVER">
+          <span></span>
+          <text>
+            <h5 class="papertitle">Deep learning for hate speech detection in tweets</h5>
+            <strong>Aman Ojha</strong>*,
+            Shashank Gupta*,
+            <a href="https://www.microsoft.com/en-us/research/people/gmanish/">Manish Gupta</a>,
+            <a href="https://irel.iiit.ac.in/vasu/">Vasudeva Varma</a>
+            <br>
+            <em>* denotes equal contribution</em>
+            <br>
+            <em>WWW</em>, 2017 <text style="color:red"><strong>(Best Poster Award)</strong> </text>
+            <br>
+            <resourcelinks>
+              <a href="https://arxiv.org/pdf/1706.00188"><i class="fas fa-link"></i> paper</a> /
+              <a
+                href="https://www.iiit.ac.in/news/IRELspaperonHateSpeechDetectionvotedBestPosterPresentationatWWW2017Perth/"><i
+                  class="fas fa-link"></i> Media Coverage</a>
+            </resourcelinks>
+          </text>
+        </td>
+      </tr>
+    </tbody>
+  </table>
+
+  <br/>
+  <br/>-->
+
+  <!-----------------   Services  
+  <h3 class="heading">Service</h3>
+  <table class="table_section">
+    <tbody>---------------->
+      <!--
+            <tr onmouseout="animateBox(this, 'stop');" onmouseover="animateBox(this, 'start');">
+          -->
+   <!--   <tr>
+        <td class="table_section__left">
+          <img src="images/placeholder.png">
+        </td>
+        <td class="table_section__right HOVER">
+          <span></span>
+          <text>
+            <table>
+                <tbody><tr>
+                    <td> <h5 class="servicetitle" style="width: 175px;">PC Chair</h5> </td>
+                    <td>WOAH-2021, AAAI 2021, ICON 2019</td>
+                </tr>
+                <tr>
+                    <td> <h5 class="servicetitle" style="width: 175px;">Reviewer</h5> </td>
+                    <td>CVPR 2021, AAAI 2021, WOAH-EMNLP 2020, CODS-COMAD 2021, ICWSM 2019, ICON 2019, ALW 2019, EMNLP 2018</td>
+                </tr>
+            </tbody></table>            
+        </text>
+        </td>
+      </tr>
+      <tr>
+        <td class="table_section__left">
+          <img src="images/iiith.png" alt="IIIT Hyderabad" style="width:100%;">
+        </td>
+        <td class="table_section__right HOVER">
+          <span></span>
+          <text>
+            <h5 class="servicetitle">Graduate Teaching Assistant</h5>
+            <p>
+              Information Retrieval & Extraction (Monsoon 2018, Instructor: <a href="https://irel.iiit.ac.in/vasu/">Prof. Vasudeva Varma</a>)
+              <br>
+              NLP Applications (Spring 2018, Instructor: <a href="https://scholar.google.co.in/citations?user=sIvMnGQAAAAJ&hl=en">Prof. Manish Shrivastava</a>)
+              <br>
+              Statistical Methods in Artificial Intelligence (Monsoon 2017, Instructor: <a href="https://scholar.google.co.in/citations?hl=en&user=PVlBz8oAAAAJ">Prof. Vineet Gandhi</a>)
+              <br>
+              Data Structures (Spring 2017, <a href="https://www.iiit.ac.in/people/faculty/lini-thomas/">Prof. Lini Teresa Thomas</a>)
+              <br>
+              ITWS-1 (Monsoon 2016, <a href="https://www.iiit.ac.in/people/faculty/shatrunjay.rawat"> Prof. Shatrunjay Rawat</a>)
+            </p>
+          </text>
+        </td>
+      </tr>
+    </tbody>
+  </table>
 -->
-<html>
-	<head>
-		<title>Stellar by HTML5 UP</title>
-		<meta charset="utf-8" />
-		<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
-		<link rel="stylesheet" href="assets/css/main.css" />
-		<noscript><link rel="stylesheet" href="assets/css/noscript.css" /></noscript>
-	</head>
-	<body class="is-preload">
 
-		<!-- Wrapper -->
-			<div id="wrapper">
+  <!-----------------   Footer  ---------------->
+  <table style="width:100%;border:0px;border-spacing:0px;border-collapse:separate;margin-right:auto;margin-left:auto;">
+    <tbody>
+      <tr>
+        <td style="padding:0px">
+          <br>
+          <p style="text-align:right;font-size:small;">
+            Website template borrowed from <a href="https://github.com/jonbarron/jonbarron_website">here</a>.
+            <br>
+            If you wish to use my version of the template, please provide credits.
+          </p>
+        </td>
+      </tr>
+    </tbody>
+  </table>
+  <script>
+    const animatedClassName = "animated";
+    const ELEMENTS = document.querySelectorAll(".HOVER");
+    const ELEMENTS_SPAN = [];
 
-				<!-- Header -->
-					<header id="header" class="alt">
-						<span class="logo"><img src="images/logo.svg" alt="" /></span>
-						<h1>Stellar</h1>
-						<p>Just another free, fully responsive site template<br />
-						built by <a href="https://twitter.com/ajlkn">@ajlkn</a> for <a href="https://html5up.net">HTML5 UP</a>.</p>
-					</header>
+    ELEMENTS.forEach((element, index) => {
+      let addAnimation = false;
+      // On the last element in the page, add a listener to remove
+      // ---> animation-class when animation ends
+      if (element.classList[1] == "FLASH") {
+        g = element;
+        element.addEventListener("animationend", e => {
+          element.classList.remove(animatedClassName);
+        });
+        addAnimation = true;
+      }
 
-				<!-- Nav -->
-					<nav id="nav">
-						<ul>
-							<li><a href="#intro" class="active">Introduction</a></li>
-							<li><a href="#first">First Section</a></li>
-							<li><a href="#second">Second Section</a></li>
-							<li><a href="#cta">Get Started</a></li>
-						</ul>
-					</nav>
+      // If The span element for this element does not exist in the array, add it.
+      if (!ELEMENTS_SPAN[index])
+        ELEMENTS_SPAN[index] = element.querySelector("span");
 
-				<!-- Main -->
-					<div id="main">
+      element.addEventListener("mouseover", e => {
+        ELEMENTS_SPAN[index].style.left = e.pageX - element.offsetLeft + "px";
+        ELEMENTS_SPAN[index].style.top = e.pageY - element.offsetTop + "px";
 
-						<!-- Introduction -->
-							<section id="intro" class="main">
-								<div class="spotlight">
-									<div class="content">
-										<header class="major">
-											<h2>Ipsum sed adipiscing</h2>
-										</header>
-										<p>Sed lorem ipsum dolor sit amet nullam consequat feugiat consequat magna
-										adipiscing magna etiam amet veroeros. Lorem ipsum dolor tempus sit cursus.
-										Tempus nisl et nullam lorem ipsum dolor sit amet aliquam.</p>
-										<ul class="actions">
-											<li><a href="generic.html" class="button">Learn More</a></li>
-										</ul>
-									</div>
-									<span class="image"><img src="images/pic01.jpg" alt="" /></span>
-								</div>
-							</section>
+        // Add an animation-class to animate via CSS.
+        if (addAnimation) element.classList.add(animatedClassName);
+      });
 
-						<!-- First Section -->
-							<section id="first" class="main special">
-								<header class="major">
-									<h2>Magna veroeros</h2>
-								</header>
-								<ul class="features">
-									<li>
-										<span class="icon solid major style1 fa-code"></span>
-										<h3>Ipsum consequat</h3>
-										<p>Sed lorem amet ipsum dolor et amet nullam consequat a feugiat consequat tempus veroeros sed consequat.</p>
-									</li>
-									<li>
-										<span class="icon major style3 fa-copy"></span>
-										<h3>Amed sed feugiat</h3>
-										<p>Sed lorem amet ipsum dolor et amet nullam consequat a feugiat consequat tempus veroeros sed consequat.</p>
-									</li>
-									<li>
-										<span class="icon major style5 fa-gem"></span>
-										<h3>Dolor nullam</h3>
-										<p>Sed lorem amet ipsum dolor et amet nullam consequat a feugiat consequat tempus veroeros sed consequat.</p>
-									</li>
-								</ul>
-								<footer class="major">
-									<ul class="actions special">
-										<li><a href="generic.html" class="button">Learn More</a></li>
-									</ul>
-								</footer>
-							</section>
+      element.addEventListener("mouseout", e => {
+        ELEMENTS_SPAN[index].style.left = e.pageX - element.offsetLeft + "px";
+        ELEMENTS_SPAN[index].style.top = e.pageY - element.offsetTop + "px";
+      });
+    });
 
-						<!-- Second Section -->
-							<section id="second" class="main special">
-								<header class="major">
-									<h2>Ipsum consequat</h2>
-									<p>Donec imperdiet consequat consequat. Suspendisse feugiat congue<br />
-									posuere. Nulla massa urna, fermentum eget quam aliquet.</p>
-								</header>
-								<ul class="statistics">
-									<li class="style1">
-										<span class="icon solid fa-code-branch"></span>
-										<strong>5,120</strong> Etiam
-									</li>
-									<li class="style2">
-										<span class="icon fa-folder-open"></span>
-										<strong>8,192</strong> Magna
-									</li>
-									<li class="style3">
-										<span class="icon solid fa-signal"></span>
-										<strong>2,048</strong> Tempus
-									</li>
-									<li class="style4">
-										<span class="icon solid fa-laptop"></span>
-										<strong>4,096</strong> Aliquam
-									</li>
-									<li class="style5">
-										<span class="icon fa-gem"></span>
-										<strong>1,024</strong> Nullam
-									</li>
-								</ul>
-								<p class="content">Nam elementum nisl et mi a commodo porttitor. Morbi sit amet nisl eu arcu faucibus hendrerit vel a risus. Nam a orci mi, elementum ac arcu sit amet, fermentum pellentesque et purus. Integer maximus varius lorem, sed convallis diam accumsan sed. Etiam porttitor placerat sapien, sed eleifend a enim pulvinar faucibus semper quis ut arcu. Ut non nisl a mollis est efficitur vestibulum. Integer eget purus nec nulla mattis et accumsan ut magna libero. Morbi auctor iaculis porttitor. Sed ut magna ac risus et hendrerit scelerisque. Praesent eleifend lacus in lectus aliquam porta. Cras eu ornare dui curabitur lacinia.</p>
-								<footer class="major">
-									<ul class="actions special">
-										<li><a href="generic.html" class="button">Learn More</a></li>
-									</ul>
-								</footer>
-							</section>
 
-						<!-- Get Started -->
-							<section id="cta" class="main special">
-								<header class="major">
-									<h2>Congue imperdiet</h2>
-									<p>Donec imperdiet consequat consequat. Suspendisse feugiat congue<br />
-									posuere. Nulla massa urna, fermentum eget quam aliquet.</p>
-								</header>
-								<footer class="major">
-									<ul class="actions special">
-										<li><a href="generic.html" class="button primary">Get Started</a></li>
-										<li><a href="generic.html" class="button">Learn More</a></li>
-									</ul>
-								</footer>
-							</section>
+    $(document).ready(function () {
+    });
 
-					</div>
+  </script>
+</body>
 
-				<!-- Footer -->
-					<footer id="footer">
-						<section>
-							<h2>Aliquam sed mauris</h2>
-							<p>Sed lorem ipsum dolor sit amet et nullam consequat feugiat consequat magna adipiscing tempus etiam dolore veroeros. eget dapibus mauris. Cras aliquet, nisl ut viverra sollicitudin, ligula erat egestas velit, vitae tincidunt odio.</p>
-							<ul class="actions">
-								<li><a href="generic.html" class="button">Learn More</a></li>
-							</ul>
-						</section>
-						<section>
-							<h2>Etiam feugiat</h2>
-							<dl class="alt">
-								<dt>Address</dt>
-								<dd>1234 Somewhere Road &bull; Nashville, TN 00000 &bull; USA</dd>
-								<dt>Phone</dt>
-								<dd>(000) 000-0000 x 0000</dd>
-								<dt>Email</dt>
-								<dd><a href="#">information@untitled.tld</a></dd>
-							</dl>
-							<ul class="icons">
-								<li><a href="#" class="icon brands fa-twitter alt"><span class="label">Twitter</span></a></li>
-								<li><a href="#" class="icon brands fa-facebook-f alt"><span class="label">Facebook</span></a></li>
-								<li><a href="#" class="icon brands fa-instagram alt"><span class="label">Instagram</span></a></li>
-								<li><a href="#" class="icon brands fa-github alt"><span class="label">GitHub</span></a></li>
-								<li><a href="#" class="icon brands fa-dribbble alt"><span class="label">Dribbble</span></a></li>
-							</ul>
-						</section>
-						<p class="copyright">&copy; Untitled. Design: <a href="https://html5up.net">HTML5 UP</a>.</p>
-					</footer>
-
-			</div>
-
-		<!-- Scripts -->
-			<script src="assets/js/jquery.min.js"></script>
-			<script src="assets/js/jquery.scrollex.min.js"></script>
-			<script src="assets/js/jquery.scrolly.min.js"></script>
-			<script src="assets/js/browser.min.js"></script>
-			<script src="assets/js/breakpoints.min.js"></script>
-			<script src="assets/js/util.js"></script>
-			<script src="assets/js/main.js"></script>
-
-	</body>
 </html>
